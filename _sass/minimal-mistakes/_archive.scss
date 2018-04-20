@@ -35,9 +35,11 @@
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: 400;
 
   a {
     color: inherit;
+    text-decoration-line: none;
   }
 
   a + a {
@@ -55,6 +57,7 @@
 
 .archive__item-excerpt {
   margin-top: 0;
+  margin-bottom: 5px;
   //font-size: $type-size-6;
 
   & + p {
@@ -77,7 +80,7 @@
 .list__item {
   .page__meta {
     margin: 0 0 4px;
-    font-size: 0.6em;
+    //font-size: 0.6em;
   }
 }
 
@@ -161,6 +164,7 @@
 
     @include breakpoint($medium) {
       display: block;
+      word-break: break-all;
       font-size: $type-size-6;
     }
   }
