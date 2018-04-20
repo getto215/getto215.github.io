@@ -301,6 +301,10 @@
   }
 }
 
+.archive__item {
+  margin-bottom: 1.5rem;
+}
+
 .taxonomy__section {
   margin-bottom: 2em;
   padding-bottom: 1em;
@@ -315,7 +319,12 @@
 
   .archive__subtitle {
     clear: both;
-    border: 0;
+    //border: 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5px 20px;
+    margin-bottom: 10px;
   }
 
   + .taxonomy__section {
@@ -478,6 +487,8 @@
   padding-top: 1em;
   border-top: 1px solid $border-color;
 
+  border-radius: 10px;
+
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
@@ -496,7 +507,12 @@
 .page__related-title {
   margin-bottom: 10px;
   font-size: $type-size-6;
-  text-transform: uppercase;
+  //text-transform: uppercase;
+  display: inline-block;
+  padding: 5px 15px 5px 15px;
+  background-color: $bitbucket-color;
+  border-radius: 12px;
+  color: #fff;
 }
 
 /*

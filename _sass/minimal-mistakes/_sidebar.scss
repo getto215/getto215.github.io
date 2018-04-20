@@ -114,18 +114,20 @@
     //display: block;
     /*width: auto;
     height: auto;*/
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
 
   }
 
   img {
     max-width: 110px;
     border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    margin-top: 5px;
 
     @include breakpoint($large) {
-      padding: 10px;
-      border: 1px solid $border-color;
+      
     }
   }
 }
@@ -167,11 +169,16 @@
   //margin: 0;
   margin-top: 5px;
   margin-bottom: 5px;
+  font-size: 14px;
 
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+}
+
+.author__email {
+  font-size: 14px;
 }
 
 .author__urls-wrapper {

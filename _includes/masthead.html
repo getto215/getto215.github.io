@@ -2,6 +2,14 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
+        <!-- logo -->
+        {% assign author = page.author | default: page.authors[0] | default: site.author %}
+        {% assign author = site.data.authors[author] | default: author %}
+        {% assign author_src = author.avatar | relative_url %}
+        <div class="site-logo">
+          <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
+        </div>
+        <!-- //logo -->
         <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
         <ul class="visible-links">
           {% for link in site.data.navigation.main %}
