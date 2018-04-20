@@ -90,16 +90,16 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-117920485-1"
 
 
 # Site Author
 author:
-  name             : "Github"
+  name             : "getto215"
   avatar           : "/assets/images/code.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "이렇게 구성한 Wcache는 현재 카카오 서비스에서 수십만 TPS 상당의 트래픽을 95% 이상의 높은 캐시 hit율을 가지며 안정적으로 처리하고 있습니다."
+  bio              : "데이터엔지니어링과 관련된 기술 자료를 포스팅합니다. (Kafka, Spark, Hadoop 등)"
   location         : 
   email            : "getto215@gmail.com"
   uri              :
