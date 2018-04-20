@@ -98,7 +98,7 @@ analytics:
 # Site Author
 author:
   name             : "getto215"
-  avatar           : "/assets/images/code.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/img/code.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "데이터엔지니어링과 관련된 기술 자료를 포스팅합니다. (Kafka, Spark, Hadoop 등)"
   location         : 
   email            : "getto215@gmail.com"
