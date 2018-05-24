@@ -99,7 +99,7 @@ analytics:
 author:
   name             : "getto215"
   avatar           : "/assets/img/code.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "데이터엔지니어링과 관련된 기술 자료를 포스팅합니다. (Kafka, Spark, Hadoop 등)"
+  bio              : "데이터 엔지니어링 기술 노트입니다. (Kafka, Spark, Hadoop 등)"
   location         : 
   email            : "getto215@gmail.com"
   uri              :
@@ -229,6 +229,7 @@ whitelist:
 category_archive:
   type: liquid
   path: /categories/
+
 tag_archive:
   type: liquid
   path: /tags/
@@ -243,6 +244,12 @@ tag_archive:
 #   permalinks:
 #     category: /categories/:name/
 #     tag: /tags/:name/
+
+# Collections
+#collections:
+#  samples:
+#    output: true
+#    permalink: /:collection/:path/
 
 
 # HTML Compression
@@ -266,3 +273,14 @@ defaults:
       comments: # true
       share: false #true
       related: true
+# _samples
+#  - scope:
+#      path: ""
+#      type: samples
+#    values:
+#      layout: single
+#      author_profile: true
+#      read_time: false #true
+#      comments: # true
+#      share: false #true
+#      related: false

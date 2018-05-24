@@ -23,13 +23,13 @@
           alt="">
       </div>
     {% endif %}
-    <h2 class="archive__item-title" itemprop="headline">
+    <h1 class="archive__item-title" itemprop="headline">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
-    </h2>
+    </h1>
     <div class="page__meta">
       {% if post.last_modified_at %}
         <p class="page__date"><time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ post.last_modified_at | date: "%Y-%m-%d" }}</time></p>
