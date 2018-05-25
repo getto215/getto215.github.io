@@ -5,9 +5,9 @@ tags:
 ---
 자주 사용하는 마크다운(markdown)을 정리하였습니다.
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+Text can be **bold**, _italic_, or ~~strikethrough~~. <U>underline</U>
 ~~~
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+Text can be **bold**, _italic_, or ~~strikethrough~~. <U>underline</U>
 ~~~
 
 --------
