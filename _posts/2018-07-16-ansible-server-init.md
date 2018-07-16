@@ -25,16 +25,14 @@ $ tree
 ~~~
 
 #### ansible.cfg (~/ansible.cfg)
-~~~bash
-$ vi ansible.cfg
+~~~ini
 [defaults]
 host_key_checking=False
 ~~~
 
 #### inventory (~/inventory)
 인벤토리 파일에는 호스트 그룹, ssh 등의 정보를 담고 있습니다.
-~~~bash
-$ vi inventory
+~~~ini
 [all]
 test-01
 
@@ -58,7 +56,7 @@ test-01 | SUCCESS => {
 
 #### init.yml (~/init.yml)
 초기화하는 플레이북입니다. 
-~~~yml
+~~~YAML
 ---
 - name: initializing hosts
   hosts: all
