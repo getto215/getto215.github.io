@@ -1,5 +1,5 @@
 ---
-title: "Spark 활용을 위한 A-Z"
+title: "Spark 구성요소 살펴보기(RDD,DAG,Scheduler)"
 tags:
   - spark
   - yarn
