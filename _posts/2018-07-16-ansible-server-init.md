@@ -102,7 +102,7 @@ $ tree
 
 #### handlers (~/roles/init/handlers/main.yml)
 
-~~~yml
+~~~bash
 ---
 # handlers file for init
 - name: restart ntpd
@@ -118,7 +118,7 @@ $ tree
 #### tasks (~/roles/init/tasks/main.yml)
 작업 모듈별로 use 플래그 변수를 두고 사용 여부를 설정할 수 있습니다.
 
-~~~yml
+~~~bash
 ---
 # tasks file for init
 # 사용자 그룹을 추가
@@ -300,7 +300,7 @@ $ tree
 #### vars (~/roles/init/handlers/main.yml)
 사용할 변수들을 정의합니다. 여기에선 vars 디렉토리 내에 정의했지만 default 디렉토리 내에 main.yml에 정의할 수도 있습니다.
 
-~~~yml
+~~~bash
 ---
 # init vars
 # ---------------
