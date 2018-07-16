@@ -13,6 +13,7 @@ tags:
 
 ## root 디렉토리 구성
 ansible을 설치하면 기본으로 구성되는 폴더가 아닌 다른 곳에 루트 디렉토리를 구성하였습니다.
+
 ~~~bash
 $ tree
 .
@@ -25,6 +26,7 @@ $ tree
 ~~~
 
 #### ansible.cfg (~/ansible.cfg)
+
 ~~~ini
 [defaults]
 host_key_checking=False
@@ -32,6 +34,7 @@ host_key_checking=False
 
 #### inventory (~/inventory)
 인벤토리 파일에는 호스트 그룹, ssh 등의 정보를 담고 있습니다.
+
 ~~~ini
 [all]
 test-01
@@ -46,6 +49,7 @@ ansible_become=true
 
 #### Test
 inventory 파일이 생성되었으니, 간단히 테스트를 할 수 있습니다.
+
 ~~~bash
 $ ansible -i inventory all -m ping
 test-01 | SUCCESS => {
@@ -56,7 +60,8 @@ test-01 | SUCCESS => {
 
 #### init.yml (~/init.yml)
 초기화하는 플레이북입니다. 
-~~~YAML
+
+~~~yml
 ---
 - name: initializing hosts
   hosts: all
@@ -69,6 +74,7 @@ roles 폴더 안에 init이란 role을 만들어서 초기화하는 플레이북
 `ansible-galaxy init [role name]`를 이용하면 쉽게 레이아웃을 구성할 수 있습니다.
 
 #### roles/init 레이아웃
+
 ~~~bash
 $ cd roles
 $ tree
@@ -95,7 +101,8 @@ $ tree
 * ntp.conf : 별도의 ntp가 필요할 경우, /etc/ntp.conf를 대체.
 
 #### handlers (~/roles/init/handlers/main.yml)
-~~~YAML
+
+~~~yml
 ---
 # handlers file for init
 - name: restart ntpd
@@ -110,7 +117,8 @@ $ tree
 
 #### tasks (~/roles/init/tasks/main.yml)
 작업 모듈별로 use 플래그 변수를 두고 사용 여부를 설정할 수 있습니다.
-~~~YAML
+
+~~~yml
 ---
 # tasks file for init
 # 사용자 그룹을 추가
@@ -291,7 +299,8 @@ $ tree
 
 #### vars (~/roles/init/handlers/main.yml)
 사용할 변수들을 정의합니다. 여기에선 vars 디렉토리 내에 정의했지만 default 디렉토리 내에 main.yml에 정의할 수도 있습니다.
-~~~YAML
+
+~~~yml
 ---
 # init vars
 # ---------------
@@ -372,8 +381,9 @@ use_hosts: false
 
 ## 실행
 모든 파일이 구성되면 ansible 루트에서 다음 명령어를 실행하여 초기화를 진행할 수 있습니다.
+
 ~~~bash
-ansible-playbook -i inventory -i init.yml
+$ ansible-playbook -i inventory -i init.yml
 ~~~
 
 ## 앞으로
