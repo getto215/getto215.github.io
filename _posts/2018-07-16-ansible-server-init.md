@@ -302,7 +302,7 @@ $ tree
 #### vars (~/roles/init/handlers/main.yml)
 사용할 변수들을 정의합니다. 여기에선 vars 디렉토리 내에 정의했지만 default 디렉토리 내에 main.yml에 정의할 수도 있습니다.
 
-~~~bash
+~~~yml
 ---
 # init vars
 # ---------------
