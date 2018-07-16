@@ -390,9 +390,9 @@ $ ansible-playbook -i inventory -i init.yml
 추후 다양한 어플리케이션의 배포, 시작, 종료 등을 ansible로 구성할 예정입니다. 
 
 ## 참고
-* best practice : https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html
-* example : https://github.com/ansible/ansible-examples
-* ansible galaxy: https://galaxy.ansible.com
-* http://wiki.tunelinux.pe.kr/display/sysadmin/Ansible
-* Ansible variables : https://moonstrike.github.io/ansible/2016/10/08/Ansible-Variables.html
+* best practice : [https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html)
+* example : [https://github.com/ansible/ansible-examples](https://github.com/ansible/ansible-examples)
+* ansible galaxy: [https://galaxy.ansible.com](https://galaxy.ansible.com)
+* 설치 및 기본 기능 익히기 : [http://wiki.tunelinux.pe.kr/display/sysadmin/Ansible](http://wiki.tunelinux.pe.kr/display/sysadmin/Ansible)
+* Ansible variables : [https://moonstrike.github.io/ansible/2016/10/08/Ansible-Variables.html](https://moonstrike.github.io/ansible/2016/10/08/Ansible-Variables.html)
 
