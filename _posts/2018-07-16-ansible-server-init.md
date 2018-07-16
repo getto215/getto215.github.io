@@ -118,7 +118,8 @@ $ tree
 #### tasks (~/roles/init/tasks/main.yml)
 작업 모듈별로 use 플래그 변수를 두고 사용 여부를 설정할 수 있습니다.
 
-~~~bash
+<!-- {% raw %} -->
+~~~yml
 ---
 # tasks file for init
 # 사용자 그룹을 추가
@@ -296,6 +297,7 @@ $ tree
     mode: 0644
   when: use_hosts | default(false) == true
 ~~~
+<!-- {% endraw %}) -->
 
 #### vars (~/roles/init/handlers/main.yml)
 사용할 변수들을 정의합니다. 여기에선 vars 디렉토리 내에 정의했지만 default 디렉토리 내에 main.yml에 정의할 수도 있습니다.
